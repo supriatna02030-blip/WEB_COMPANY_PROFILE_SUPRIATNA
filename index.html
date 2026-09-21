@@ -1,187 +1,2346 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Supriatna Digital Studio Jakarta - Jasa Website & Aplikasi Profesional</title>
-<meta name="description" content="Software house Jakarta spesialis Website & Aplikasi. 50+ project, trusted by businesses. WA 0858-9309-3628 Email supriatnadigitalstudio@gmail.com">
-<link rel="icon" href="logo.png">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-*{font-family:'Plus Jakarta Sans',sans-serif}
-.gradient-text{background:linear-gradient(90deg,#2563eb,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.glass{backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
-</style>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Supriatna Digital Studio Jakarta - Jasa Website & Aplikasi Profesional</title>
+
+  <meta
+    name="description"
+    content="SUPRIATNA DIGITAL STUDIO Jakarta - Jasa pembuatan website, aplikasi Android & iOS, toko online, dan custom digital system untuk bisnis."
+  >
+
+  <meta
+    name="keywords"
+    content="jasa website Jakarta, jasa aplikasi Jakarta, web developer Jakarta, aplikasi Android, aplikasi iOS, toko online, custom system"
+  >
+
+  <meta name="author" content="SUPRIATNA DIGITAL STUDIO">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#050e24">
+
+  <link
+    rel="canonical"
+    href="https://supriatnadigitalstudio.github.io/"
+  >
+
+  <!-- Open Graph -->
+  <meta
+    property="og:title"
+    content="SUPRIATNA DIGITAL STUDIO"
+  >
+
+  <meta
+    property="og:description"
+    content="Jasa Website & Aplikasi Profesional dari Jakarta."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:url"
+    content="https://supriatnadigitalstudio.github.io/"
+  >
+
+  <meta
+    property="og:image"
+    content="https://supriatnadigitalstudio.github.io/logo.png"
+  >
+
+  <!-- Twitter -->
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="SUPRIATNA DIGITAL STUDIO"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Jasa Website & Aplikasi Profesional dari Jakarta."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://supriatnadigitalstudio.github.io/logo.png"
+  >
+
+  <link rel="icon" href="logo.png">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "SUPRIATNA DIGITAL STUDIO",
+    "url": "https://supriatnadigitalstudio.github.io/",
+    "logo": "https://supriatnadigitalstudio.github.io/logo.png",
+    "description": "Jasa pembuatan website, aplikasi Android & iOS, toko online, dan custom digital system.",
+    "email": "supriatnadigitalstudio@gmail.com",
+    "telephone": "+6285893093628",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jakarta",
+      "addressCountry": "ID"
+    },
+    "areaServed": "Indonesia"
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #050e24;
+      --bg2: #071633;
+      --card: rgba(255,255,255,.055);
+      --card-border: rgba(255,255,255,.10);
+      --text: #f8fbff;
+      --muted: #9eabc2;
+      --blue: #2563eb;
+      --cyan: #22d3ee;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      background:
+        radial-gradient(
+          circle at 15% 10%,
+          rgba(37,99,235,.18),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 85% 20%,
+          rgba(34,211,238,.10),
+          transparent 25%
+        ),
+        linear-gradient(
+          180deg,
+          #050e24 0%,
+          #06132d 45%,
+          #050e24 100%
+        );
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(
+          rgba(255,255,255,.018) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(255,255,255,.018) 1px,
+          transparent 1px
+        );
+      background-size: 50px 50px;
+      mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 80%
+      );
+      z-index: -1;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+    }
+
+    .container-main {
+      width: min(1180px, calc(100% - 32px));
+      margin: auto;
+    }
+
+    .gradient-text {
+      background:
+        linear-gradient(
+          90deg,
+          #ffffff 0%,
+          #60a5fa 45%,
+          #22d3ee 100%
+        );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .glass {
+      background: rgba(255,255,255,.045);
+      border: 1px solid rgba(255,255,255,.09);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .glow {
+      box-shadow:
+        0 0 80px rgba(37,99,235,.15);
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+      position: fixed;
+      top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(1180px, calc(100% - 24px));
+      z-index: 1000;
+      border-radius: 22px;
+      background: rgba(5,14,36,.72);
+      border: 1px solid rgba(255,255,255,.08);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+    }
+
+    .nav-inner {
+      min-height: 70px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      min-width: 0;
+    }
+
+    .brand img {
+      width: 45px;
+      height: 45px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #5ba4ff;
+      background: #050e24;
+    }
+
+    .brand-text {
+      line-height: 1.1;
+    }
+
+    .brand-title {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      white-space: nowrap;
+    }
+
+    .brand-subtitle {
+      font-size: 9px;
+      color: #7f8da7;
+      margin-top: 4px;
+      letter-spacing: .13em;
+    }
+
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .desktop-nav a {
+      padding: 10px 13px;
+      border-radius: 12px;
+      color: #aebbd0;
+      font-size: 13px;
+      font-weight: 600;
+      transition: .25s ease;
+    }
+
+    .desktop-nav a:hover {
+      color: white;
+      background: rgba(255,255,255,.06);
+    }
+
+    .nav-wa {
+      background:
+        linear-gradient(
+          135deg,
+          #2563eb,
+          #22d3ee
+        );
+      color: white !important;
+      box-shadow: 0 8px 30px rgba(37,99,235,.25);
+    }
+
+    .menu-btn {
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 13px;
+      background: rgba(255,255,255,.05);
+      color: white;
+      display: none;
+      cursor: pointer;
+    }
+
+    .mobile-menu {
+      display: none;
+      padding: 0 15px 15px;
+    }
+
+    .mobile-menu a {
+      display: block;
+      padding: 13px 12px;
+      border-radius: 12px;
+      color: #bdc9db;
+      font-size: 14px;
+    }
+
+    .mobile-menu a:hover {
+      background: rgba(255,255,255,.05);
+      color: white;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 150px 0 90px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .availability {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(34,211,238,.06);
+      border: 1px solid rgba(34,211,238,.15);
+      color: #9deefa;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+
+    .availability-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #22d3ee;
+      box-shadow: 0 0 12px #22d3ee;
+    }
+
+    .hero h1 {
+      margin-top: 22px;
+      font-size: clamp(43px, 6vw, 76px);
+      line-height: .98;
+      letter-spacing: -.055em;
+      font-weight: 800;
+      max-width: 850px;
+    }
+
+    .hero-desc {
+      margin-top: 25px;
+      max-width: 680px;
+      color: #9daac0;
+      line-height: 1.85;
+      font-size: 15px;
+    }
+
+    .hero-actions {
+      margin-top: 31px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      min-height: 50px;
+      padding: 0 20px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 800;
+      transition: .3s ease;
+    }
+
+    .btn-primary {
+      background:
+        linear-gradient(
+          135deg,
+          #2563eb,
+          #22d3ee
+        );
+      color: white;
+      box-shadow: 0 12px 35px rgba(37,99,235,.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 45px rgba(37,99,235,.35);
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.045);
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-3px);
+      background: rgba(255,255,255,.08);
+    }
+
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background:
+        radial-gradient(
+          circle,
+          rgba(37,99,235,.28),
+          transparent 65%
+        );
+      filter: blur(15px);
+    }
+
+    .hero-logo {
+      width: min(460px, 85vw);
+      aspect-ratio: 1;
+      object-fit: contain;
+      position: relative;
+      z-index: 2;
+      filter:
+        drop-shadow(0 0 35px rgba(37,99,235,.35))
+        drop-shadow(0 0 70px rgba(34,211,238,.12));
+      animation: floatLogo 5s ease-in-out infinite;
+    }
+
+    @keyframes floatLogo {
+      0%,100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-12px);
+      }
+    }
+
+    .hero-cards {
+      margin-top: 42px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 12px;
+    }
+
+    .mini-card {
+      padding: 17px;
+      border-radius: 17px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.07);
+    }
+
+    .mini-card strong {
+      display: block;
+      font-size: 14px;
+    }
+
+    .mini-card span {
+      display: block;
+      margin-top: 6px;
+      color: #7f8ca5;
+      font-size: 10px;
+    }
+
+    /* TRUST */
+
+    .trusted-section {
+      background: white;
+      color: #071329;
+      padding: 46px 0;
+      border-radius: 38px 38px 0 0;
+    }
+
+    .trusted-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .trusted-title {
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .trusted-sub {
+      color: #68758a;
+      font-size: 12px;
+      margin-top: 6px;
+    }
+
+    .trusted-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .trusted-pill {
+      padding: 10px 13px;
+      border-radius: 999px;
+      background: #f2f5f9;
+      font-size: 10px;
+      font-weight: 800;
+      color: #526078;
+    }
+
+    /* SECTIONS */
+
+    .section {
+      padding: 105px 0;
+    }
+
+    .section-label {
+      color: #5ba4ff;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      margin-top: 13px;
+      font-size: clamp(31px, 4vw, 50px);
+      line-height: 1.05;
+      letter-spacing: -.04em;
+      font-weight: 800;
+    }
+
+    .section-desc {
+      margin-top: 15px;
+      color: #8795ad;
+      max-width: 650px;
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    /* SERVICES */
+
+    .services-grid {
+      margin-top: 45px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      padding: 30px;
+      border-radius: 25px;
+      position: relative;
+      overflow: hidden;
+      transition: .3s ease;
+    }
+
+    .service-card::after {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      right: -60px;
+      bottom: -60px;
+      background: rgba(37,99,235,.14);
+      border-radius: 50%;
+      filter: blur(30px);
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      border-color: rgba(91,164,255,.28);
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(37,99,235,.25),
+          rgba(34,211,238,.10)
+        );
+      font-size: 23px;
+    }
+
+    .popular {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: rgba(34,211,238,.10);
+      color: #67e8f9;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+
+    .service-card h3 {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .service-card p {
+      margin-top: 11px;
+      color: #8996ad;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .service-price {
+      margin-top: 24px;
+      color: #67e8f9;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    /* PORTFOLIO */
+
+    .portfolio-grid {
+      margin-top: 45px;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 20px;
+    }
+
+    .portfolio-card {
+      overflow: hidden;
+      border-radius: 26px;
+      transition: .3s ease;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(91,164,255,.25);
+    }
+
+    .portfolio-image {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
+      background: #071633;
+    }
+
+    .portfolio-content {
+      padding: 24px;
+    }
+
+    .portfolio-tag {
+      color: #5ba4ff;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .12em;
+    }
+
+    .portfolio-content h3 {
+      margin-top: 9px;
+      font-size: 19px;
+    }
+
+    .portfolio-content p {
+      margin-top: 9px;
+      color: #8795ad;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .portfolio-link {
+      margin-top: 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: #67e8f9;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    /* PROCESS */
+
+    .process-grid {
+      margin-top: 45px;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 15px;
+    }
+
+    .process-card {
+      padding: 25px;
+      border-radius: 23px;
+      position: relative;
+    }
+
+    .process-number {
+      font-size: 12px;
+      color: #5ba4ff;
+      font-weight: 800;
+    }
+
+    .process-card h3 {
+      margin-top: 25px;
+      font-size: 16px;
+    }
+
+    .process-card p {
+      margin-top: 9px;
+      color: #8592aa;
+      font-size: 11px;
+      line-height: 1.7;
+    }
+
+    /* TECH */
+
+    .tech-grid {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      gap: 12px;
+    }
+
+    .tech-item {
+      min-height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 17px;
+      color: #b8c4d7;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .tech-item:hover {
+      color: white;
+      border-color: rgba(91,164,255,.25);
+    }
+
+    /* TESTIMONIAL */
+
+    .testimonial-grid {
+      margin-top: 45px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 17px;
+    }
+
+    .testimonial-card {
+      padding: 26px;
+      border-radius: 23px;
+    }
+
+    .stars {
+      color: #67e8f9;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    .testimonial-card p {
+      margin-top: 17px;
+      color: #a3afc1;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .testimonial-person {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,.07);
+    }
+
+    .testimonial-person strong {
+      display: block;
+      font-size: 12px;
+    }
+
+    .testimonial-person span {
+      display: block;
+      color: #68758c;
+      font-size: 10px;
+      margin-top: 4px;
+    }
+
+    /* FAQ */
+
+    .faq {
+      max-width: 850px;
+      margin: 45px auto 0;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(255,255,255,.09);
+    }
+
+    .faq-question {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      color: white;
+      text-align: left;
+      padding: 22px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .faq-icon {
+      width: 28px;
+      height: 28px;
+      flex: 0 0 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 9px;
+      background: rgba(255,255,255,.06);
+      color: #67e8f9;
+      transition: .25s ease;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s ease;
+    }
+
+    .faq-answer-inner {
+      padding: 0 0 20px;
+      color: #8795ad;
+      font-size: 12px;
+      line-height: 1.8;
+      max-width: 750px;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    /* CTA */
+
+    .cta-section {
+      padding: 70px 0 100px;
+    }
+
+    .cta-box {
+      padding: 70px 35px;
+      text-align: center;
+      border-radius: 35px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      background:
+        radial-gradient(
+          circle,
+          rgba(37,99,235,.18),
+          transparent 65%
+        );
+      pointer-events: none;
+    }
+
+    .cta-box > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-box h2 {
+      font-size: clamp(32px,5vw,57px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+      font-weight: 800;
+    }
+
+    .cta-box p {
+      margin: 17px auto 0;
+      max-width: 600px;
+      color: #8996ad;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .cta-actions {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 11px;
+    }
+
+    .cta-note {
+      margin-top: 25px;
+      color: #64728a;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .12em;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 30px 0 40px;
+      border-top: 1px solid rgba(255,255,255,.07);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-copy {
+      color: #6e7b92;
+      font-size: 10px;
+      line-height: 1.7;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .footer-links a {
+      padding: 8px 11px;
+      border-radius: 10px;
+      background: rgba(255,255,255,.035);
+      color: #93a0b5;
+      font-size: 10px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+
+      .desktop-nav {
+        display: none;
+      }
+
+      .menu-btn {
+        display: grid;
+        place-items: center;
+      }
+
+      .mobile-menu.show {
+        display: block;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .hero {
+        padding-top: 140px;
+      }
+
+      .hero-visual {
+        order: -1;
+      }
+
+      .hero-logo {
+        width: min(320px, 70vw);
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .tech-grid {
+        grid-template-columns: repeat(3,1fr);
+      }
+
+      .trusted-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .trusted-pills {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 680px) {
+
+      .container-main {
+        width: min(100% - 22px, 1180px);
+      }
+
+      .navbar {
+        top: 8px;
+        width: calc(100% - 16px);
+      }
+
+      .brand-title {
+        font-size: 11px;
+      }
+
+      .brand-subtitle {
+        font-size: 7px;
+      }
+
+      .brand img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .hero {
+        padding: 125px 0 70px;
+      }
+
+      .hero h1 {
+        font-size: 44px;
+      }
+
+      .hero-desc {
+        font-size: 13px;
+      }
+
+      .hero-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .trusted-section {
+        border-radius: 25px 25px 0 0;
+      }
+
+      .section {
+        padding: 75px 0;
+      }
+
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tech-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .testimonial-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-box {
+        padding: 50px 20px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-links {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
 </head>
-<body class="bg-[#050e24] text-white overflow-x-hidden">
 
-<!-- 1. NAVBAR -->
-<nav class="fixed top-0 w-full z-50 glass bg-[#050e24]/90 border-b border-white/5">
-<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-<div class="flex items-center gap-3">
-<img src="logo.png" class="w-11 h-11 rounded-full border-2 border-blue-400/40 object-cover" alt="logo">
-<div class="leading-none"><div class="font-extrabold tracking-wide text-[15px]">SUPRIATNA</div><div class="font-bold text-[11px] tracking-[2px] text-white/70">DIGITAL STUDIO</div></div>
-</div>
-<div class="hidden md:flex items-center gap-8 text-sm text-white/60">
-<a href="#services" class="hover:text-white">Services</a>
-<a href="#portfolio" class="hover:text-white">Portfolio</a>
-<a href="#process" class="hover:text-white">Process</a>
-<a href="https://wa.me/6285893093628?text=Halo%20Supriatna%20Digital%20Studio" class="bg-gradient-to-r from-[#2563eb] to-[#22d3ee] text-white px-5 py-2.5 rounded-full font-bold hover:scale-105 transition">Chat WA</a>
-</div>
-<a href="https://wa.me/6285893093628" class="md:hidden bg-white text-black px-4 py-2 rounded-full text-sm font-bold">WA</a>
-</div>
-</nav>
+<body>
 
-<!-- 2. HERO -->
-<section class="pt-28 pb-16 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-<div>
-<div class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 text-xs text-blue-300 mb-6"><span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> AVAILABLE FOR PROJECTS • JAKARTA</div>
-<h1 class="text-5xl md:text-6xl font-extrabold leading-[0.95] mb-5">We Build<br><span class="gradient-text">Digital Products</span><br>That Grow.</h1>
-<p class="text-white/50 text-[17px] leading-relaxed mb-8 max-w-xl">Software house Jakarta spesialis Website & Aplikasi cepat, modern, dan menghasilkan. 5+ years experience helping businesses scale.</p>
-<div class="flex gap-3 mb-10">
-<a href="#portfolio" class="bg-white text-black px-7 py-3.5 rounded-full font-bold hover:scale-105 transition">View Work →</a>
-<a href="https://instagram.com/supriatnadigitalstudio" class="border border-white/10 px-7 py-3.5 rounded-full font-semibold hover:bg-white/5 transition">Follow IG</a>
-</div>
-<div class="flex gap-10 border-t border-white/5 pt-6">
-<div><div class="text-2xl font-extrabold">50+</div><div class="text-xs text-white/40">Projects</div></div>
-<div><div class="text-2xl font-extrabold">98%</div><div class="text-xs text-white/40">Satisfied</div></div>
-<div><div class="text-2xl font-extrabold">4.9/5</div><div class="text-xs text-white/40">Rating</div></div>
-</div>
-</div>
-<div class="relative flex justify-center">
-<div class="absolute w-[400px] h-[400px] bg-blue-600/30 blur-[80px] rounded-full"></div>
-<img src="logo.png" class="relative w-[360px] md:w-[460px] aspect-square rounded-full border-[6px] border-blue-400/30 object-cover shadow-[0_0_80px_rgba(59,130,246,0.4)]" alt="Supriatna Digital Studio">
-</div>
-</section>
+  <!-- ================= NAVBAR ================= -->
 
-<!-- 3. TRUSTED BY -->
-<section class="bg-white rounded-t-[2.5rem] py-12 px-6 text-center">
-<div class="max-w-7xl mx-auto">
-<p class="text-gray-400 text-sm tracking-widest mb-8">TRUSTED BY 50+ BUSINESSES IN INDONESIA</p>
-<div class="flex flex-wrap justify-center gap-10 opacity-40 grayscale text-gray-800 font-bold text-sm">
-<span>UMKM JAKARTA</span><span>TOKO ONLINE</span><span>STARTUP</span><span>EDUCATION</span><span>BRAND LOCAL</span><span>PROPERTY</span>
-</div>
-</div>
+  <header class="navbar">
+    <div class="nav-inner">
 
-<!-- 4. SERVICES -->
-<div id="services" class="max-w-7xl mx-auto pt-20 pb-10 text-left">
-<h2 class="text-4xl font-extrabold text-[#050e24] mb-3">Services That Convert</h2>
-<p class="text-gray-500 mb-10">Pilih layanan yang bisnis Anda butuhkan. Semua Custom.</p>
-<div class="grid md:grid-cols-3 gap-6">
-<div class="bg-gray-50 border rounded-[1.5rem] p-8">
-<div class="text-xs tracking-widest text-gray-400 mb-4">COMPANY PROFILE • CUSTOM QUOTE</div>
-<h3 class="text-xl font-bold text-[#050e24] mb-3">Company Profile Premium</h3>
-<ul class="text-sm text-gray-500 space-y-2"><li>• Design modern & cepat</li><li>• SEO ready Jakarta</li><li>• Gratis domain + hosting 1th</li></ul>
-</div>
-<div class="bg-[#050e24] rounded-[1.5rem] p-8 text-white relative">
-<div class="absolute top-5 right-5 bg-gradient-to-r from-yellow-400 to-orange-400 text-black text-[10px] font-bold px-3 py-1 rounded-full">MOST POPULAR</div>
-<div class="text-xs tracking-widest text-white/40 mb-4">TOKO ONLINE & SYSTEM • CUSTOM QUOTE</div>
-<h3 class="text-xl font-bold mb-3">Toko Online & Custom System</h3>
-<ul class="text-sm text-white/60 space-y-2"><li>• Payment gateway & ongkir otomatis</li><li>• Dashboard admin lengkap</li><li>• Paling laris di Jakarta</li></ul>
-</div>
-<div class="bg-gray-50 border rounded-[1.5rem] p-8">
-<div class="text-xs tracking-widest text-gray-400 mb-4">APLIKASI ANDROID & iOS • CUSTOM QUOTE</div>
-<h3 class="text-xl font-bold text-[#050e24] mb-3">Aplikasi Mobile</h3>
-<ul class="text-sm text-gray-500 space-y-2"><li>• Flutter / React Native</li><li>• Publish Play Store & App Store</li><li>• Maintenance included</li></ul>
-</div>
-</div>
-</div>
+      <a href="#home" class="brand">
+        <img
+          src="logo.png"
+          alt="SUPRIATNA DIGITAL STUDIO"
+          width="45"
+          height="45"
+        >
 
-<!-- 5. PORTFOLIO -->
-<div id="portfolio" class="max-w-7xl mx-auto pt-20 pb-10">
-<h2 class="text-4xl font-extrabold text-[#050e24] mb-3">Selected Work</h2>
-<p class="text-gray-500 mb-10">Project nyata + slot untuk bisnis Anda.</p>
-<div class="grid md:grid-cols-2 gap-6">
-<!-- Card1 -->
-<div class="rounded-[1.5rem] overflow-hidden border bg-gradient-to-br from-violet-500 to-blue-600 p-[1px]">
-<div class="bg-white rounded-[1.5rem] overflow-hidden h-full">
-<div class="h-56 bg-gray-100 overflow-hidden"><img src="taman-ilmu.png" class="w-full h-full object-cover" alt="Taman Ilmu"></div>
-<div class="p-6"><div class="text-[11px] tracking-widest text-blue-600 font-bold mb-2">LIVE PROJECT • 2024 • EDUCATION</div><h3 class="font-bold text-[#050e24] text-lg">Taman Ilmu - Platform Belajar Anak</h3><p class="text-sm text-gray-500 mt-2">Website edukasi interaktif untuk anak usia dini.</p><a href="#" class="inline-block mt-4 text-sm font-bold text-[#050e24]">View Live →</a></div>
-</div>
-</div>
-<!-- Card2 -->
-<div class="rounded-[1.5rem] overflow-hidden border bg-white">
-<div class="h-56 bg-gray-900 overflow-hidden flex items-center justify-center"><img src="your-business-here.png" class="w-full h-full object-cover" alt="Your Business Here"></div>
-<div class="p-6"><div class="text-[11px] tracking-widest text-gray-400 font-bold mb-2">WEBSITE • AVAILABLE SLOT</div><h3 class="font-bold text-[#050e24] text-lg">Your Business Here</h3><p class="text-sm text-gray-500 mt-2">Bisnis Anda bisa tampil di sini. Slot terbatas.</p><a href="https://wa.me/6285893093628?text=Halo%20kak,%20saya%20mau%20claim%20slot%20website" class="inline-block mt-4 text-sm font-bold bg-[#050e24] text-white px-4 py-2 rounded-full">Claim This Spot →</a></div>
-</div>
-<!-- Card3 -->
-<div class="rounded-[1.5rem] overflow-hidden border bg-white">
-<div class="h-56 bg-gray-900 overflow-hidden flex items-center justify-center"><img src="your-app-here.png" class="w-full h-full object-cover" alt="Your App Here"></div>
-<div class="p-6"><div class="text-[11px] tracking-widest text-gray-400 font-bold mb-2">MOBILE APP • AVAILABLE SLOT</div><h3 class="font-bold text-[#050e24] text-lg">Your App Here</h3><p class="text-sm text-gray-500 mt-2">Aplikasi impian Anda selanjutnya. Jadilah yang berikutnya.</p><a href="https://wa.me/6285893093628?text=Halo%20kak,%20saya%20mau%20bikin%20aplikasi" class="inline-block mt-4 text-sm font-bold bg-[#050e24] text-white px-4 py-2 rounded-full">Build My App →</a></div>
-</div>
-<!-- Card4 Tanpa Promo -->
-<div class="rounded-[1.5rem] overflow-hidden border bg-[#0a0a0a] relative">
-<div class="absolute inset-0 opacity-40"><img src="limited-slots.png" class="w-full h-full object-cover" alt="Next Project"></div>
-<div class="relative p-8 h-full flex flex-col justify-center min-h-[340px]">
-<div class="text-[11px] tracking-[3px] text-yellow-400 font-bold mb-3">NEXT PROJECT • LET'S BUILD</div>
-<h3 class="text-3xl font-extrabold text-white leading-none mb-4">YOUR PROJECT<br><span class="text-yellow-400">IS NEXT</span></h3>
-<p class="text-white/60 text-sm mb-6">Punya ide? Wujudkan jadi produk digital yang menghasilkan. Konsultasi gratis, proposal 24 jam.</p>
-<a href="https://wa.me/6285893093628?text=Halo%20kak,%20saya%20punya%20ide%20project" class="bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-bold px-6 py-3 rounded-full text-sm w-fit">Start Your Project →</a>
-<div class="mt-6 text-[11px] text-white/30">Jakarta Agency • Premium • Fast Response</div>
-</div>
-</div>
-</div>
-</div>
+        <div class="brand-text">
+          <div class="brand-title">
+            SUPRIATNA DIGITAL STUDIO
+          </div>
 
-<!-- 6. PROCESS -->
-<div id="process" class="max-w-7xl mx-auto pt-20 pb-10">
-<h2 class="text-4xl font-extrabold text-[#050e24] mb-10">How We Work</h2>
-<div class="grid md:grid-cols-4 gap-6">
-<div class="bg-gray-50 rounded-[1.5rem] p-6"><div class="text-3xl font-extrabold text-gray-200 mb-3">01</div><h4 class="font-bold text-[#050e24]">Konsultasi Gratis</h4><p class="text-sm text-gray-500 mt-2">Ngobrolin ide & kebutuhan bisnis Anda.</p></div>
-<div class="bg-gray-50 rounded-[1.5rem] p-6"><div class="text-3xl font-extrabold text-gray-200 mb-3">02</div><h4 class="font-bold text-[#050e24]">UI/UX Design</h4><p class="text-sm text-gray-500 mt-2">Desain modern yang disetujui dulu.</p></div>
-<div class="bg-gray-50 rounded-[1.5rem] p-6"><div class="text-3xl font-extrabold text-gray-200 mb-3">03</div><h4 class="font-bold text-[#050e24]">Development</h4><p class="text-sm text-gray-500 mt-2">Coding cepat & clean, update harian.</p></div>
-<div class="bg-gray-50 rounded-[1.5rem] p-6"><div class="text-3xl font-extrabold text-gray-200 mb-3">04</div><h4 class="font-bold text-[#050e24]">Launch & Support</h4><p class="text-sm text-gray-500 mt-2">Go live + maintenance 30 hari.</p></div>
-</div>
-</div>
+          <div class="brand-subtitle">
+            JAKARTA • WEB • APP • DEVELOPMENT
+          </div>
+        </div>
+      </a>
 
-<!-- 7. TECH STACK -->
-<div class="max-w-7xl mx-auto pt-10 pb-10 flex flex-wrap gap-3">
-<span class="px-4 py-2 bg-gray-100 rounded-full text-sm font-semibold text-[#050e24]">React</span>
-<span class="px-4 py-2 bg-gray-100 rounded-full text-sm font-semibold text-[#050e24]">Next.js</span>
-<span class="px-4 py-2 bg-gray-100 rounded-full text-sm font-semibold text-[#050e24]">Flutter</span>
-<span class="px-4 py-2 bg-gray-100 rounded-full text-sm font-semibold text-[#050e24]">Laravel</span>
-<span class="px-4 py-2 bg-gray-100 rounded-full text-sm font-semibold text-[#050e24]">Firebase</span>
-<span class="px-4 py-2 bg-gray-100 rounded-full text-sm font-semibold text-[#050e24]">Tailwind</span>
-</div>
+      <nav class="desktop-nav">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#process">Process</a>
 
-<!-- 8. TESTIMONIALS -->
-<div class="max-w-7xl mx-auto pt-10 pb-10 grid md:grid-cols-3 gap-6">
-<div class="bg-gray-50 rounded-[1.5rem] p-6"><div class="text-yellow-400 mb-3">★★★★★</div><p class="text-sm text-[#050e24]">"Cepat banget! 1 minggu jadi, langsung bisa jualan online. Recommended Jakarta!"</p><div class="mt-4 text-xs font-bold">— Budi, Toko Jakarta</div></div>
-<div class="bg-gray-50 rounded-[1.5rem] p-6"><div class="text-yellow-400 mb-3">★★★★★</div><p class="text-sm text-[#050e24]">"Aplikasinya smooth, supportnya fast response. Worth it!"</p><div class="mt-4 text-xs font-bold">— Sari, Startup</div></div>
-<div class="bg-gray-50 rounded-[1.5rem] p-6"><div class="text-yellow-400 mb-3">★★★★★</div><p class="text-sm text-[#050e24]">"Desainnya premium, gak kayak template. Klien saya langsung percaya."</p><div class="mt-4 text-xs font-bold">— Andi, Brand Owner</div></div>
-</div>
+        <a
+          class="nav-wa"
+          href="https://wa.me/6285893093628"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Chat WA
+        </a>
+      </nav>
 
-<!-- 9. FAQ -->
-<div class="max-w-7xl mx-auto pt-10 pb-20">
-<h2 class="text-3xl font-extrabold text-[#050e24] mb-8">FAQ</h2>
-<div class="space-y-4">
-<details class="bg-gray-50 rounded-xl p-5"><summary class="font-bold text-[#050e24] cursor-pointer">Berapa lama pengerjaan?</summary><p class="text-sm text-gray-500 mt-3">Company profile 7-14 hari, Toko online 14-21 hari, Aplikasi 30-45 hari tergantung fitur.</p></details>
-<details class="bg-gray-50 rounded-xl p-5"><summary class="font-bold text-[#050e24] cursor-pointer">Ada garansi?</summary><p class="text-sm text-gray-500 mt-3">Garansi bug 30 hari + gratis revisi minor.</p></details>
-<details class="bg-gray-50 rounded-xl p-5"><summary class="font-bold text-[#050e24] cursor-pointer">Bisa cicil?</summary><p class="text-sm text-gray-500 mt-3">Bisa! DP 50%, pelunasan setelah jadi. Fleksibel.</p></details>
-<details class="bg-gray-50 rounded-xl p-5"><summary class="font-bold text-[#050e24] cursor-pointer">Ada maintenance?</summary><p class="text-sm text-gray-500 mt-3">Ada paket maintenance bulanan mulai 200rb. Update & backup.</p></details>
-</div>
-</div>
-</section>
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Buka menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
 
-<!-- 10. CTA FINAL -->
-<section class="bg-[#050e24] border-t border-white/5 py-20 px-6 text-center">
-<h2 class="text-4xl md:text-5xl font-extrabold mb-4">Punya Ide? Kita Wujudkan Jadi Cuan.</h2>
-<p class="text-white/50 mb-8">Konsultasi gratis, proposal 24 jam. Fast response.</p>
-<div class="flex justify-center gap-3 flex-wrap">
-<a href="https://wa.me/6285893093628?text=Halo%20Supriatna%20Digital%20Studio,%20saya%20mau%20konsultasi" class="bg-white text-black px-8 py-4 rounded-full font-bold">WA 0858-9309-3628</a>
-<a href="https://instagram.com/supriatnadigitalstudio" class="border border-white/10 px-8 py-4 rounded-full font-bold hover:bg-white/5">IG @supriatnadigitalstudio</a>
-</div>
-<div class="mt-8 text-xs text-white/30">📍 JAKARTA • supriatnadigitalstudio@gmail.com • FAST RESPONSE 1 JAM</div>
-</section>
+    </div>
 
-<!-- 11. FOOTER -->
-<footer class="bg-black py-6 px-6">
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between text-[11px] text-white/30 gap-2">
-<div>© 2026 SUPRIATNA DIGITAL STUDIO Jakarta - supriatnadigitalstudio@gmail.com</div>
-<div>WA 0858-9309-3628 • IG @supriatnadigitalstudio • supriatnadigitalstudio.github.io</div>
-</div>
-</footer>
+    <nav
+      class="mobile-menu"
+      id="mobileMenu"
+    >
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#process">Process</a>
+
+      <a
+        href="https://wa.me/6285893093628"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        💬 Chat WhatsApp
+      </a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+
+    <section
+      class="hero"
+      id="home"
+    >
+      <div class="container-main">
+
+        <div class="hero-grid">
+
+          <div>
+
+            <div class="availability">
+              <span class="availability-dot"></span>
+              AVAILABLE FOR PROJECTS • JAKARTA
+            </div>
+
+            <h1>
+              We Build
+              <span class="gradient-text">
+                Digital Products
+              </span>
+              That Grow.
+            </h1>
+
+            <p class="hero-desc">
+              SUPRIATNA DIGITAL STUDIO adalah software house
+              berbasis Jakarta yang membantu bisnis membangun
+              website, aplikasi, toko online, dan sistem digital
+              custom dengan pengalaman 5+ tahun.
+            </p>
+
+            <div class="hero-actions">
+
+              <a
+                href="#portfolio"
+                class="btn-primary"
+              >
+                View Work →
+              </a>
+
+              <a
+                href="https://instagram.com/supriatnadigitalstudio"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-secondary"
+              >
+                Instagram ↗
+              </a>
+
+            </div>
+
+            <div class="hero-cards">
+
+              <div class="mini-card">
+                <strong>Web & App</strong>
+                <span>Digital Products</span>
+              </div>
+
+              <div class="mini-card">
+                <strong>Jakarta</strong>
+                <span>Based in Indonesia</span>
+              </div>
+
+              <div class="mini-card">
+                <strong>Custom</strong>
+                <span>Built for Your Needs</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="hero-visual">
+
+            <img
+              src="logo.png"
+              alt="SUPRIATNA DIGITAL STUDIO Logo"
+              class="hero-logo"
+              width="460"
+              height="460"
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= TRUSTED ================= -->
+
+    <section class="trusted-section">
+
+      <div class="container-main">
+
+        <div class="trusted-content">
+
+          <div>
+            <div class="trusted-title">
+              Trusted by 50+ Businesses in Indonesia.
+            </div>
+
+            <div class="trusted-sub">
+              Membantu bisnis membangun kehadiran digital.
+            </div>
+          </div>
+
+          <div class="trusted-pills">
+            <span class="trusted-pill">UMKM</span>
+            <span class="trusted-pill">Startup</span>
+            <span class="trusted-pill">Retail</span>
+            <span class="trusted-pill">Personal Brand</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section
+      class="section"
+      id="services"
+    >
+      <div class="container-main">
+
+        <div class="section-label">
+          WHAT WE BUILD
+        </div>
+
+        <h2 class="section-title">
+          Digital Solutions
+          <br>
+          For Your Business.
+        </h2>
+
+        <p class="section-desc">
+          Dari website sederhana sampai aplikasi dan sistem
+          custom untuk membantu operasional bisnis menjadi lebih
+          modern dan efisien.
+        </p>
+
+
+        <div class="services-grid">
+
+          <article class="service-card glass glow">
+
+            <div class="service-icon">
+              🌐
+            </div>
+
+            <h3>
+              Company Profile
+            </h3>
+
+            <p>
+              Website profesional untuk memperkenalkan bisnis,
+              brand, layanan, portfolio, dan meningkatkan
+              kepercayaan pelanggan.
+            </p>
+
+            <div class="service-price">
+              CUSTOM QUOTE
+            </div>
+
+          </article>
+
+
+          <article class="service-card glass glow">
+
+            <div class="service-icon">
+              🛒
+            </div>
+
+            <span class="popular">
+              MOST POPULAR
+            </span>
+
+            <h3>
+              Toko Online & Custom System
+            </h3>
+
+            <p>
+              Bangun toko online atau sistem digital sesuai
+              kebutuhan operasional bisnis kamu.
+            </p>
+
+            <div class="service-price">
+              CUSTOM QUOTE
+            </div>
+
+          </article>
+
+
+          <article class="service-card glass glow">
+
+            <div class="service-icon">
+              📱
+            </div>
+
+            <h3>
+              Aplikasi Android & iOS
+            </h3>
+
+            <p>
+              Aplikasi mobile custom untuk kebutuhan bisnis,
+              layanan pelanggan, internal system, dan produk
+              digital.
+            </p>
+
+            <div class="service-price">
+              CUSTOM QUOTE
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= PORTFOLIO ================= -->
+
+    <section
+      class="section"
+      id="portfolio"
+    >
+      <div class="container-main">
+
+        <div class="section-label">
+          SELECTED WORK
+        </div>
+
+        <h2 class="section-title">
+          Projects That
+          <br>
+          Speak For Us.
+        </h2>
+
+        <p class="section-desc">
+          Beberapa contoh project dan konsep digital yang
+          dikembangkan oleh SUPRIATNA DIGITAL STUDIO.
+        </p>
+
+
+        <div class="portfolio-grid">
+
+
+          <!-- TAMAN ILMU -->
+
+          <article class="portfolio-card glass">
+
+            <img
+              src="taman-ilmu.png"
+              alt="Taman Ilmu Education Platform"
+              class="portfolio-image"
+              width="800"
+              height="500"
+              loading="lazy"
+            >
+
+            <div class="portfolio-content">
+
+              <div class="portfolio-tag">
+                LIVE PROJECT • 2024
+              </div>
+
+              <h3>
+                Taman Ilmu
+              </h3>
+
+              <p>
+                Platform pendidikan dan kajian Islam dengan
+                tampilan modern, ringan, dan mobile-friendly.
+              </p>
+
+              <button
+                type="button"
+                class="portfolio-link"
+                onclick="openTamanIlmu()"
+                style="
+                  background:none;
+                  border:0;
+                  padding:0;
+                  cursor:pointer;
+                  font-family:inherit;
+                "
+              >
+                View Live →
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <!-- YOUR BUSINESS -->
+
+          <article class="portfolio-card glass">
+
+            <img
+              src="your-business-here.png"
+              alt="Your Business Here"
+              class="portfolio-image"
+              width="800"
+              height="500"
+              loading="lazy"
+            >
+
+            <div class="portfolio-content">
+
+              <div class="portfolio-tag">
+                WEBSITE • AVAILABLE SLOT
+              </div>
+
+              <h3>
+                Your Business Here
+              </h3>
+
+              <p>
+                Website bisnis kamu bisa menjadi project
+                berikutnya yang tampil di portfolio ini.
+              </p>
+
+              <a
+                class="portfolio-link"
+                href="https://wa.me/6285893093628?text=Halo%20Supriatna%20Digital%20Studio%2C%20saya%20tertarik%20membuat%20website%20untuk%20bisnis%20saya."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Claim This Spot →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- YOUR APP -->
+
+          <article class="portfolio-card glass">
+
+            <img
+              src="your-app-here.png"
+              alt="Your App Here"
+              class="portfolio-image"
+              width="800"
+              height="500"
+              loading="lazy"
+            >
+
+            <div class="portfolio-content">
+
+              <div class="portfolio-tag">
+                MOBILE APP • AVAILABLE SLOT
+              </div>
+
+              <h3>
+                Your App Here
+              </h3>
+
+              <p>
+                Punya ide aplikasi Android atau iOS?
+                Wujudkan menjadi produk digital.
+              </p>
+
+              <a
+                class="portfolio-link"
+                href="https://wa.me/6285893093628?text=Halo%20Supriatna%20Digital%20Studio%2C%20saya%20ingin%20membuat%20aplikasi%20Android%20atau%20iOS."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Build My App →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- NEXT PROJECT -->
+
+          <article class="portfolio-card glass">
+
+            <img
+              src="limited-slots.png"
+              alt="Your Next Digital Project"
+              class="portfolio-image"
+              width="800"
+              height="500"
+              loading="lazy"
+            >
+
+            <div class="portfolio-content">
+
+              <div class="portfolio-tag">
+                NEXT PROJECT • LET'S BUILD
+              </div>
+
+              <h3>
+                Your Project is Next
+              </h3>
+
+              <p>
+                Punya ide? Wujudkan jadi produk digital yang
+                menghasilkan. Konsultasi gratis.
+              </p>
+
+              <a
+                class="portfolio-link"
+                href="https://wa.me/6285893093628?text=Halo%20Supriatna%20Digital%20Studio%2C%20saya%20ingin%20konsultasi%20project%20digital."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Start Your Project →
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= PROCESS ================= -->
+
+    <section
+      class="section"
+      id="process"
+    >
+      <div class="container-main">
+
+        <div class="section-label">
+          HOW WE WORK
+        </div>
+
+        <h2 class="section-title">
+          From Idea
+          <br>
+          To Launch.
+        </h2>
+
+        <p class="section-desc">
+          Proses dibuat sederhana supaya kamu bisa fokus pada
+          bisnis sementara kami membantu mengerjakan sisi
+          digitalnya.
+        </p>
+
+
+        <div class="process-grid">
+
+          <div class="process-card glass">
+            <div class="process-number">01</div>
+
+            <h3>
+              Konsultasi Gratis
+            </h3>
+
+            <p>
+              Ceritakan kebutuhan, masalah, dan ide project
+              yang ingin kamu bangun.
+            </p>
+          </div>
+
+
+          <div class="process-card glass">
+            <div class="process-number">02</div>
+
+            <h3>
+              UI/UX Design
+            </h3>
+
+            <p>
+              Membuat struktur dan tampilan produk agar
+              nyaman digunakan.
+            </p>
+          </div>
+
+
+          <div class="process-card glass">
+            <div class="process-number">03</div>
+
+            <h3>
+              Development
+            </h3>
+
+            <p>
+              Website, aplikasi, atau sistem mulai
+              dikembangkan sesuai kebutuhan.
+            </p>
+          </div>
+
+
+          <div class="process-card glass">
+            <div class="process-number">04</div>
+
+            <h3>
+              Launch & Support
+            </h3>
+
+            <p>
+              Produk dipublikasikan dan mendapatkan
+              dukungan setelah launch.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= TECH STACK ================= -->
+
+    <section class="section">
+
+      <div class="container-main">
+
+        <div class="section-label">
+          TECHNOLOGY
+        </div>
+
+        <h2 class="section-title">
+          Built With
+          <br>
+          Modern Technology.
+        </h2>
+
+        <div class="tech-grid">
+
+          <div class="tech-item glass">
+            React
+          </div>
+
+          <div class="tech-item glass">
+            Next.js
+          </div>
+
+          <div class="tech-item glass">
+            Flutter
+          </div>
+
+          <div class="tech-item glass">
+            Laravel
+          </div>
+
+          <div class="tech-item glass">
+            Firebase
+          </div>
+
+          <div class="tech-item glass">
+            Tailwind
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= TESTIMONIAL ================= -->
+
+    <section class="section">
+
+      <div class="container-main">
+
+        <div class="section-label">
+          CLIENT FEEDBACK
+        </div>
+
+        <h2 class="section-title">
+          What Clients
+          <br>
+          Say About Us.
+        </h2>
+
+
+        <div class="testimonial-grid">
+
+          <article class="testimonial-card glass">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Website yang dibuat terlihat profesional
+              dan jauh lebih mudah digunakan oleh pelanggan.”
+            </p>
+
+            <div class="testimonial-person">
+              <strong>
+                Business Owner
+              </strong>
+
+              <span>
+                Jakarta
+              </span>
+            </div>
+
+          </article>
+
+
+          <article class="testimonial-card glass">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Proses komunikasinya simpel dan kebutuhan
+              kami bisa diterjemahkan menjadi sistem digital.”
+            </p>
+
+            <div class="testimonial-person">
+              <strong>
+                UMKM Owner
+              </strong>
+
+              <span>
+                Jakarta
+              </span>
+            </div>
+
+          </article>
+
+
+          <article class="testimonial-card glass">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Tampilan modern dan responsive. Cocok untuk
+              bisnis yang ingin mulai berkembang secara digital.”
+            </p>
+
+            <div class="testimonial-person">
+              <strong>
+                Startup Founder
+              </strong>
+
+              <span>
+                Jakarta
+              </span>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= FAQ ================= -->
+
+    <section class="section">
+
+      <div class="container-main">
+
+        <div class="section-label">
+          FAQ
+        </div>
+
+        <h2 class="section-title">
+          Frequently Asked
+          <br>
+          Questions.
+        </h2>
+
+
+        <div class="faq">
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span>
+                Bisa membuat website sesuai kebutuhan saya?
+              </span>
+
+              <span class="faq-icon">
+                +
+              </span>
+            </button>
+
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Bisa. Website dapat dibuat custom berdasarkan
+                kebutuhan bisnis, tampilan, fitur, dan alur
+                yang kamu inginkan.
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span>
+                Apakah bisa membuat aplikasi Android?
+              </span>
+
+              <span class="faq-icon">
+                +
+              </span>
+            </button>
+
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Bisa. Kami dapat membantu pengembangan aplikasi
+                Android dan kebutuhan aplikasi mobile custom.
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span>
+                Apakah bisa konsultasi terlebih dahulu?
+              </span>
+
+              <span class="faq-icon">
+                +
+              </span>
+            </button>
+
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Tentu. Kamu bisa menjelaskan ide dan kebutuhan
+                project melalui WhatsApp untuk mendapatkan
+                gambaran solusi yang sesuai.
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span>
+                Berapa biaya pembuatan website atau aplikasi?
+              </span>
+
+              <span class="faq-icon">
+                +
+              </span>
+            </button>
+
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Harga menyesuaikan jenis project, jumlah fitur,
+                desain, teknologi, dan kebutuhan pengembangan.
+                Hubungi kami untuk konsultasi dan penawaran.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= FINAL CTA ================= -->
+
+    <section class="cta-section">
+
+      <div class="container-main">
+
+        <div class="cta-box glass glow">
+
+          <div class="section-label">
+            LET'S WORK TOGETHER
+          </div>
+
+          <h2 class="gradient-text">
+            Punya Ide?
+            <br>
+            Kita Wujudkan Jadi Cuan.
+          </h2>
+
+          <p>
+            Ceritakan ide website, aplikasi, toko online,
+            atau sistem digital yang ingin kamu bangun.
+            Konsultasi awal gratis.
+          </p>
+
+
+          <div class="cta-actions">
+
+            <a
+              href="https://wa.me/6285893093628?text=Halo%20Supriatna%20Digital%20Studio%2C%20saya%20ingin%20konsultasi%20project%20digital."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+            >
+              💬 Chat WhatsApp
+            </a>
+
+            <a
+              href="https://instagram.com/supriatnadigitalstudio"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-secondary"
+            >
+              Instagram ↗
+            </a>
+
+          </div>
+
+
+          <div class="cta-note">
+            📍 JAKARTA • supriatnadigitalstudio@gmail.com • FAST RESPONSE
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div class="container-main">
+
+      <div class="footer-inner">
+
+        <div class="footer-copy">
+          © 2026 SUPRIATNA DIGITAL STUDIO Jakarta
+          <br>
+          supriatnadigitalstudio@gmail.com
+        </div>
+
+        <div class="footer-links">
+
+          <a
+            href="https://wa.me/6285893093628"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp
+          </a>
+
+          <a
+            href="https://instagram.com/supriatnadigitalstudio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+
+          <a
+            href="https://supriatnadigitalstudio.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Website
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script>
+
+    /* =========================================
+       TAMAN ILMU LIVE PROJECT
+    ========================================= */
+
+    const TAMAN_ILMU_URL =
+      "https://supriatna02030-blip.github.io/taman_ilmu/";
+
+
+    function openTamanIlmu() {
+
+      window.open(
+        TAMAN_ILMU_URL,
+        "_blank",
+        "noopener,noreferrer"
+      );
+
+    }
+
+
+    /* =========================================
+       MOBILE MENU
+    ========================================= */
+
+    const menuBtn =
+      document.getElementById("menuBtn");
+
+    const mobileMenu =
+      document.getElementById("mobileMenu");
+
+
+    function closeMobileMenu() {
+
+      mobileMenu.classList.remove("show");
+
+      menuBtn.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+      menuBtn.textContent = "☰";
+
+      document.body.style.overflow = "";
+
+    }
+
+
+    menuBtn.addEventListener(
+      "click",
+      function () {
+
+        const isOpen =
+          mobileMenu.classList.contains("show");
+
+        if (isOpen) {
+
+          closeMobileMenu();
+
+        } else {
+
+          mobileMenu.classList.add("show");
+
+          menuBtn.setAttribute(
+            "aria-expanded",
+            "true"
+          );
+
+          menuBtn.textContent = "✕";
+
+          document.body.style.overflow = "hidden";
+
+        }
+
+      }
+    );
+
+
+    document
+      .querySelectorAll("#mobileMenu a")
+      .forEach(
+        function (link) {
+
+          link.addEventListener(
+            "click",
+            closeMobileMenu
+          );
+
+        }
+      );
+
+
+    document.addEventListener(
+      "keydown",
+      function (event) {
+
+        if (
+          event.key === "Escape"
+        ) {
+
+          closeMobileMenu();
+
+        }
+
+      }
+    );
+
+
+    document.addEventListener(
+      "click",
+      function (event) {
+
+        if (
+          mobileMenu.classList.contains("show") &&
+          !mobileMenu.contains(event.target) &&
+          !menuBtn.contains(event.target)
+        ) {
+
+          closeMobileMenu();
+
+        }
+
+      }
+    );
+
+
+    /* =========================================
+       FAQ ACCORDION
+    ========================================= */
+
+    const faqItems =
+      document.querySelectorAll(".faq-item");
+
+
+    faqItems.forEach(
+      function (item) {
+
+        const question =
+          item.querySelector(".faq-question");
+
+        const answer =
+          item.querySelector(".faq-answer");
+
+
+        question.addEventListener(
+          "click",
+          function () {
+
+            const isActive =
+              item.classList.contains("active");
+
+
+            faqItems.forEach(
+              function (otherItem) {
+
+                otherItem.classList.remove(
+                  "active"
+                );
+
+                otherItem
+                  .querySelector(
+                    ".faq-question"
+                  )
+                  .setAttribute(
+                    "aria-expanded",
+                    "false"
+                  );
+
+                otherItem
+                  .querySelector(
+                    ".faq-answer"
+                  ).style.maxHeight = null;
+
+              }
+            );
+
+
+            if (!isActive) {
+
+              item.classList.add("active");
+
+              question.setAttribute(
+                "aria-expanded",
+                "true"
+              );
+
+              answer.style.maxHeight =
+                answer.scrollHeight + "px";
+
+            }
+
+          }
+        );
+
+      }
+    );
+
+
+    /* =========================================
+       CLOSE MOBILE MENU ON RESIZE
+    ========================================= */
+
+    window.addEventListener(
+      "resize",
+      function () {
+
+        if (
+          window.innerWidth > 900
+        ) {
+
+          closeMobileMenu();
+
+        }
+
+      }
+    );
+
+  </script>
 
 </body>
 </html>
